@@ -1,0 +1,26 @@
+@import '../colors';
+
+body {
+	background-color: getColor('layout','body');
+
+	&:before {
+		background: getColor('base','primary');		
+		content: " ";
+		display: block;
+		height: 270px;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 0;
+	}
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}

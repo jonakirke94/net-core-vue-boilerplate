@@ -1,0 +1,12 @@
+@import 'map-set';
+
+@function getColor($group, $color) {
+	@return map-get(map-get($colors, $group), $color);
+}
+
+@function setColor($group, $color, $value) {
+	@if map-has-key($colors, $group) {
+		@return map-set($colors, $group, map-set(map-get($colors, $group), $color, $value));
+	}
+	@return map-merge($colors, ($group: ($color: $value)));
+}

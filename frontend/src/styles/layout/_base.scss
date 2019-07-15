@@ -1,0 +1,54 @@
+@import '../utility/variables';
+@import '../layout/media';
+
+.app {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $gutter;
+	padding-right: $gutter;
+	width: 100%;
+
+	@include media-sm-up {
+		max-width: 576px;
+	}
+
+	@include media-md-up {
+		max-width: 720px;
+	}
+
+
+	@include media-lg-up {
+		max-width: 940px;
+	}
+
+	@include media-xl-up {
+		max-width: 1140px;
+	}
+}
+
+.card {
+	position: relative;
+	background-color: #fff;
+	border-radius: $border-radius;
+	box-shadow: 0 2px 4px 0 rgba(14,30,37,.12);
+	color: rgba(14,30,37,.54);
+	display: flex;
+	flex-direction: column;
+	min-width: 320px;
+	padding: $gutter;
+	min-height: 600px;
+	margin-bottom: $gutter;
+
+	@include media-sm-down {
+		padding: $gutter / 2;
+		min-height: 800px;
+	}
+}

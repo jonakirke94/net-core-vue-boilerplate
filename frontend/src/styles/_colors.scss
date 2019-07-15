@@ -1,0 +1,33 @@
+@import './functions/colors';
+
+$colors: (
+	base: (
+		primary: darken(#cc2030, 5%),
+		secondary: #fec400,
+		tertiary: #29cc97,
+		quaternary: #ca65ff,
+		quintenary: #ffffff
+    ),
+    layout: (
+			body: #F2F5F7,
+			content: #ffffff,
+			border: darken(#ecedf0, 0%)
+    ),
+	state: (
+		success:#40e889,
+		danger:#de4c44,
+		warning:#e6b31d,
+		neutral:#398baa,
+		muted:#9a9ea7
+	),
+	text: (
+		primary: #39414e,
+		strong: #1f2c3f,
+		weak: #9a9ea7,
+		inverted: #ffffff
+	),
+	border: (
+		primary: rgba(0,0,0,0.15)
+	)
+);
+
